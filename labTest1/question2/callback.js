@@ -4,7 +4,8 @@
 const resolvedPromise = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("message: delayed success!");
+      // json using {}
+      resolve({"message: delayed success!"});
     }, 500);
   });
 };
@@ -12,7 +13,7 @@ const resolvedPromise = () => {
 const rejectedPromise = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      reject("error: delayed exception!");
+      reject({"error: delayed exception!"});
     }, 500);
   });
 };
